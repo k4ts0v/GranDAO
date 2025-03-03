@@ -1,0 +1,8 @@
+categoria_id,nombre_categoria
+1,Ficción
+2,Realismo mágico
+3,Distopía
+4,Romántico
+5,Psicológico
+6,Filosofía
+7,Ciencia ficción

@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "67c4ade0d119f143d70a93b4"
+  },
+  "nombre": "Miguel de Cervantes",
+  "pais_origen": "España"
+},
+{
+  "_id": {
+    "$oid": "67c4ade0d119f143d70a93b5"
+  },
+  "nombre": "Gabriel García Márquez",
+  "pais_origen": "Colombia"
+},
+{
+  "_id": {
+    "$oid": "67c4ade0d119f143d70a93b6"
+  },
+  "nombre": "George Orwell",
+  "pais_origen": "Reino Unido"
+},
+{
+  "_id": {
+    "$oid": "67c4ade0d119f143d70a93b7"
+  },
+  "nombre": "Jane Austen",
+  "pais_origen": "Reino Unido"
+},
+{
+  "_id": {
+    "$oid": "67c4ade0d119f143d70a93b8"
+  },
+  "nombre": "Fiódor Dostoyevski",
+  "pais_origen": "Rusia"
+},
+{
+  "_id": {
+    "$oid": "67c4ade0d119f143d70a93b9"
+  },
+  "nombre": "Platón",
+  "pais_origen": "Grecia"
+}]

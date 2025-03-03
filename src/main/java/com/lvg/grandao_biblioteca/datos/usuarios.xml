@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<usuarios>
+    <usuario>
+        <correo>juan.perez@example.com</correo>
+        <nombre_usuario>Juan Pérez</nombre_usuario>
+        <telefono>123456789</telefono>
+        <usuario_id>1</usuario_id>
+    </usuario>
+    <usuario>
+        <correo>ana.garcia@example.com</correo>
+        <nombre_usuario>Ana García</nombre_usuario>
+        <telefono>987654321</telefono>
+        <usuario_id>2</usuario_id>
+    </usuario>
+    <usuario>
+        <correo>carlos.lopez@example.com</correo>
+        <nombre_usuario>Carlos López</nombre_usuario>
+        <telefono>555666777</telefono>
+        <usuario_id>3</usuario_id>
+    </usuario>
+    <usuario>
+        <correo>maria.rodriguez@example.com</correo>
+        <nombre_usuario>María Rodríguez</nombre_usuario>
+        <telefono>444333222</telefono>
+        <usuario_id>4</usuario_id>
+    </usuario>
+    <usuario>
+        <correo>roberto.gomez@example.com</correo>
+        <nombre_usuario>Roberto Gomez</nombre_usuario>
+        <telefono>643 32 32 21</telefono>
+        <usuario_id>5</usuario_id>
+    </usuario>
+</usuarios>
