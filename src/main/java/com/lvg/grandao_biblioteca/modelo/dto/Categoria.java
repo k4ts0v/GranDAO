@@ -1,5 +1,6 @@
 package com.lvg.grandao_biblioteca.modelo.dto;
 
+import com.lvg.grandao_biblioteca.modelo.dao.CategoriaDAO;
 import jakarta.validation.constraints.NotNull;
 
 /**
@@ -9,7 +10,7 @@ import jakarta.validation.constraints.NotNull;
  * @since 1.0
  * @version 1.0
  */
-public class Categoria {
+public class Categoria extends CategoriaDAO {
 
     @NotNull(message = "El ID de la categoria es obligatorio")
     private Long categoriaId;
@@ -72,5 +73,17 @@ public class Categoria {
      */
     public void setNombreCategoria(String nombreCategoria) {
         this.nombreCategoria = nombreCategoria;
+    }
+
+    /**
+     * Método toString que devuelve la categoría en el formato adecuado para ser almacenada.
+     * El formato es: categoria_id,nombre_categoria
+     *
+     * @return La cadena en el formato adecuado para la categoría.
+     * @since 1.0
+     */
+    @Override
+    public String toString() {
+        return categoriaId + "," + nombreCategoria;
     }
 }

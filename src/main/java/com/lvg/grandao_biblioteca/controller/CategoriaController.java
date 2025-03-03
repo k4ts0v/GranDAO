@@ -62,8 +62,7 @@ public class CategoriaController {
      */
     @PostMapping
     public ResponseEntity<Void> agregarCategoria(@Valid @RequestBody Categoria categoria) {
-        String categoriaStr = categoria.getCategoriaId() + "," + categoria.getNombreCategoria();
-        categoriaService.agregarCategoria(categoriaStr);
+        categoriaService.agregarCategoria(categoria);
         return new ResponseEntity<>(HttpStatus.CREATED); // 201 Created
     }
 }

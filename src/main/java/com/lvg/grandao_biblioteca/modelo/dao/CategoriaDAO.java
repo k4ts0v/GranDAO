@@ -1,5 +1,7 @@
 package com.lvg.grandao_biblioteca.modelo.dao;
 
+import com.lvg.grandao_biblioteca.modelo.dto.Categoria;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +27,7 @@ public class CategoriaDAO {
     public List<String> obtenerCategorias() {
         // Se crea una lista de categorías, para guardar ahí las categorías leídas desde el fichero.
         List<String> categorias = new ArrayList<>();
-        // Se crea un bufferedReader a partir de un FileWriter del fichero.
+        // Se crea un bufferedReader a partir de un FileReader del fichero.
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH))) {
             String line;
             // Si hay línea, se añade a la lista.
@@ -45,11 +47,14 @@ public class CategoriaDAO {
      * @throws IOException Excepción lanzada si ha habido un error accediendo al fichero o a su contenido.
      * @since 1.0
      */
-    public void agregarCategoria(String categoria) {
+    public void agregarCategoria(Categoria categoria) {
+        // Generamos la representación en string de la categoría a partir de su toString().
+        String categoriaStr = categoria.toString();
+
         // Se crea un BufferedWriter a partir de un FileWriter del fichero, en modo append para no sobreescribir.
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH, true))) {
-            // Se escribe la cateogría y un salto de línea.
-            writer.write(categoria);
+            // Se escribe la categoría y un salto de línea.
+            writer.write(categoriaStr);
             writer.newLine();
         } catch (IOException e) {
             e.printStackTrace();

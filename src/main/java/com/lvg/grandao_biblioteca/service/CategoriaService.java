@@ -1,6 +1,7 @@
 package com.lvg.grandao_biblioteca.service;
 
 import com.lvg.grandao_biblioteca.modelo.dao.CategoriaDAO;
+import com.lvg.grandao_biblioteca.modelo.dto.Categoria;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -44,7 +45,7 @@ public class CategoriaService {
      * @param categoria El nombre de la categoría que se desea agregar.
      * @since 1.0
      */
-    public void agregarCategoria(String categoria) {
+    public void agregarCategoria(Categoria categoria) {
         categoriaDAO.agregarCategoria(categoria);
     }
 }

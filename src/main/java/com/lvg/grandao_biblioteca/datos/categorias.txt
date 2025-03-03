@@ -1,4 +1,4 @@
-categoria_id,nombre_categoria
+categoriaId,nombreCategoria
 1,Ficción
 2,Realismo mágico
 3,Distopía
